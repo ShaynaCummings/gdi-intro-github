@@ -1,106 +1,119 @@
 <!doctype html>
 <html lang="en">
 
-	<head>
-		<meta charset="utf-8">
+<head>
+    <meta charset="utf-8">
 
-		<title>GDI Boston Intro to Version Control with Git &amp; GitHub</title>
+    <title>GDI Boston Intro to Version Control with Git &amp; GitHub</title>
 
-		<meta name="description" content="Slides for Girl Develop It Boston's Intro to the Linux Command Line class">
-		<meta name="author" content="Girl Develop It">
+    <meta name="description" content="Slides for Girl Develop It Boston's Intro to the Linux Command Line class">
+    <meta name="author" content="Girl Develop It">
 
-		<meta name="apple-mobile-web-app-capable" content="yes" />
-		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 
-		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/gdidefault.css" id="theme">
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/gdidefault.css" id="theme">
 
-		<!-- For syntax highlighting -->
-		<!-- light editor<link rel="stylesheet" href="lib/css/light.css">-->
-		<!-- dark editor--><link rel="stylesheet" href="lib/css/dark.css">
+    <!-- For syntax highlighting -->
+    <!-- light editor<link rel="stylesheet" href="lib/css/light.css">-->
+    <!-- dark editor-->
+    <link rel="stylesheet" href="lib/css/dark.css">
 
-		<!-- If use the PDF print sheet so students can print slides-->
+    <!-- If use the PDF print sheet so students can print slides-->
 
-		<link rel="stylesheet" href="css/print/pdf.css" type="text/css" media="print">
+    <link rel="stylesheet" href="css/print/pdf.css" type="text/css" media="print">
     <link rel="icon" type="image/x-icon" href="favicon.ico" />
-		<!--[if lt IE 9]>
+    <!--[if lt IE 9]>
 		<script src="lib/js/html5shiv.js"></script>
 		<![endif]-->
-	</head>
+</head>
 
-	<body>
+<body>
 
-		<div class="reveal">
+    <div class="reveal">
 
-			<!-- Any section element inside of this container is displayed as a slide -->
-			<div class="slides">
-        <!-- Opening -->
-				<section>
-					<!--<h1>Intro to the Linux Command Line</h1>-->
-                    <h3>Intro to Version Control with</h3>
-					<h1>Git &amp; GitHub</h1>
+        <!-- Any section element inside of this container is displayed as a slide -->
+        <div class="slides">
+            <!-- Opening -->
+            <section>
+                <h3>Intro to Version Control with</h3>
+                <h1>Git &amp; GitHub</h1>
+                <p></p>
+                <p>Girl Develop It | Spring 2017</p>
 
-					<p>
-						<small>Find these slides (and other handy resources) at <a href ="https://github.com/gdiboston/gdi-intro-github">https://github.com/gdiboston/gdi-intro-github</a></small>
-					</p>
-				</section>
-             <!-- Welcome! -->
+                <p>
+                    <small>Find these slides (and other handy resources) at <a href ="https://github.com/ShaynaCummings/gdi-intro-github">https://github.com/ShaynaCummings/gdi-intro-github</a></small>
+                </p>
+            </section>
+
+            <!-- Welcome! -->
             <section class="hide-pdf">
                 <h2>Welcome!</h2>
+                <img src="./img/GDIBoston.png" width="200px" />
                 <p>Girl Develop It is here to provide affordable and accessible programs to learn software through mentorship and hands-on instruction.</p>
+            </section>
+
+            <!-- Ground Rules -->
+            <section class="hide-pdf">
+                <h2>Ground Rules</h2>
                 <ul>
-                    <li>We are here for you!</li>
+                    <li>This is your time!</li>
                     <li>Every question is important</li>
+                    <li>Don't get blocked</li>
                     <li>Help each other</li>
                     <li>Have fun</li>
                 </ul>
             </section>
 
-            <!-- First Things First -->
+            <!-- Our Team -->
             <section>
-                <h2>First Things First</h2>
+                <h2>Our Team</h2>
 
                 <p class="blue">Thank you to our wonderful TAs!</p>
                 <ul>
-                    <li>Sean Kelly</li>
-                    <li>Amanda Mu&ntilde;oz</li>
+                    <p>Kathleen</p>
+                    <p>Lily Barrett</p>
                 </ul>
                 <p>&nbsp;</p>
                 <p class="blue">Course website: </p>
-                <p>https://github.com/gdiboston/gdi-intro-github</p>
-
+                <p>https://github.com/shaynacummings/gdi-intro-github</p>
+                <p>&nbsp;</p>
                 <p class="blue">Instructor contact info: </p>
-                <p>lizk@girldevelopit.com</p>
+                <p>@ShaynaCummings</p>
+                <p>shayna.cummings@gmail.com</p>
             </section>
+
+            <!-- About You -->
             <section class="hide-pdf">
-                <h2>First Things First</h2>
-                <p class="blue">Tell us about yourself.</p>
+                <h2>About You</h2>
                 <ul>
                     <li>Who are you?</li>
                     <li>What do you hope to get out of the class?</li>
-                    <li>What's your favorite food?</li>
+                    <li>If you could have any superpower, what would it be?</li>
                 </ul>
             </section>
-        <!-- Get started -->
+
+            <!-- Get started -->
             <section class="hide-pdf">
                 <h2>Tools</h2>
                 <p>We'll be using the following tools in class today:</p>
                 <ul>
                     <li>Command Line Interface:
                         <ul>
-                            <li>Terminal (MacOS): Built in</li>
-                            <li>Babun (Win): <a href="https://babun.github.io/">babun.github.io</a></li>
+                            <li>Mac OS: Terminal (pre-installed)</li>
+                            <li>Linux: Terminal (pre-installed)</li>
+                            <li>Windows: <a href="https://babun.github.io/">babun.github.io</a> (Shell based on Cygwin)</li>
                         </ul>
                     </li>
 
-                    <li>Git: <a href="http://git-scm.com/downloads">http://git-scm.com/downloads</a></li>
-                    <li>GitHub: <a href="https://github.com">https://github.com</a></li>
+                    <li>Git: <a href="http://git-scm.com/downloads">git-scm.com/downloads</a></li>
+                    <li>GitHub: <a href="https://github.com">github.com</a></li>
                 </ul>
-
-
             </section>
-        <!-- What we'll cover today -->
-            <section class="hide-pdf">
+
+            <!-- What we'll cover today -->
+            <section>
                 <h2>What we'll cover today</h2>
                 <ul>
                     <li>Git concepts &amp; workflow</li>
@@ -110,59 +123,86 @@
                     <li>Debugging and resolving merge conflicts</li>
                 </ul>
             </section>
-        <!-- What is version control? -->
-            <section class="hide-pdf">
+
+            <!-- What is version control? -->
+            <section>
                 <h2>What is Version Control?</h2>
-                    <p><strong class="blue">Version Control System (VCS):</strong> Software that records changes to files so that you can:</p>
-                <ul>
-                    <li>Revert to a previous state</li>
-                    <li>Compare changes over time</li>
-                    <li>See who made changes</li>
-                </ul>
-                <p>&nbsp;</p>
-                <p class="blue">No more catastrophes!</p>
+                <p>Software that allows you (and your team) to do two powerful things:</p>
+
+                <p><span class="blue">Collaborate</span>: Create anything with other people, from academic papers to entire websites and applications.</p>
+
+                <p><span class="blue">Track and revert changes</span>: Mistakes happen. Wouldn't it be nice if you could see the changes that have been made and go back to a "snapshot in time" to fix something that went wrong? Or see who specifically made
+                    the changes and when?</p>
+
             </section>
-        <!-- What is Git? -->
+
+            <!--History of Version Control -->
+            <section>
+                <h3>Brief history of Version Control</h3>
+                <p><span class="green">1990s</span> -- CVS (Concurrent Version Systems)</p>
+                <p><span class="green">2000s</span> -- SVN (Apache Subversion)</p>
+                <p><span class="green">2005</span> -- Git (well, Git)</p>
+            </section>
+
+            <!-- What is version control? -->
+            <section>
+                <h3>Version Control Types</h3>
+
+                <h4>Centralized Version Control</h4>
+                <p>Examples: CVS, SVN</p>
+                <p>One central server, each client (person) checks out and merges changes to main server</p>
+
+                <h4>Distributed Version Control</h4>
+                <p>Examples: Git, Mercurial</p>
+                <p>Each client (person) has a local repository, which they can then reconcile with the main server.</p>
+
+            </section>
+
+            <!-- What is Git? -->
             <section class="hide-pdf">
                 <h2>What is Git?</h2>
                 <p>&nbsp;</p>
-                    <p><strong class="blue">Git:</strong> Free, open source version control system</p>
-                        <ul>
-                            <li>Command line application</li>
-                            <li>Runs on your local machine</li>
-                        </ul>
+                <p><strong class="blue">Git:</strong> Free, open source version control system</p>
+                <ul>
+                    <li>Command line application</li>
+                    <li>Runs on your local machine</li>
+                </ul>
 
             </section>
-        <!-- What is Git? -->
+
+            <!-- What is Git? -->
             <section class="hide-pdf">
                 <h2>What is GitHub?</h2>
-                    <p>&nbsp;</p>
-                    <p><strong class="blue">GitHub:</strong> Code storage and sharing service that interacts with Git and allows you to:</p>
-                        <ul>
-                            <li>Collaborate with others on projects</li>
-                            <li>Share/showcase your code</li>
-                            <li>Find code that you can use in your own projects</li>
-                        </ul>
+                <p>&nbsp;</p>
+                <p><strong class="blue">GitHub:</strong> Code storage and sharing service that interacts with Git and allows you to:</p>
+                <ul>
+                    <li>Collaborate with others on projects</li>
+                    <li>Share/showcase your code</li>
+                    <li>Find code that you can use in your own projects</li>
+                </ul>
                 <ul>
             </section>
-        <!-- Git Terminology -->
+
+            <!-- Git Terminology -->
             <section class="hide-pdf">
                 <h2>Git Terminology</h2>
                 <ul>
                     <li><strong class="blue">Repository ("Repo"):</strong> a project (folder) that Git is tracking changes to</li>
                     <li><strong class="blue">Working Directory:</strong> local copy of a Git repository</li>
-                    <li><strong class="blue">Index:</strong>  staging area - list of changes not yet committed</li>
+                    <li><strong class="blue">Index:</strong> staging area - list of changes not yet committed</li>
                     <li><strong class="blue">Head:</strong> list of committed changes</li>
                     <li><strong class="blue">Remote Repository:</strong> remote copy of a Git repository (ie: in GitHub)</li>
                 </ul>
             </section>
-        <!-- Git Concepts -->
+
+            <!-- Git Concepts -->
             <section class="hide-pdf">
                 <h2>Git workflow</h2>
 
-                <img src="img/git-workflow.png"/>
+                <img src="img/git-workflow.png" />
             </section>
-        <!-- Git Concepts -->
+
+            <!-- Git Concepts -->
             <section class="hide-pdf">
                 <h2>Git workflow</h2>
                 <ol>
@@ -173,11 +213,12 @@
                     <li><pre class="inline">git push</pre> changes to your remote repository</li>
                 </ol>
             </section>
-        <!-- Fire up your Terminal -->
+
+            <!-- Fire up your Terminal -->
             <section class="hide-pdf">
                 <h2>Fire up your command shell</h2>
                 <ul>
-                    <li><strong class="blue">Mac OS:</strong> open Applications > Utilities > Terminal</li>
+                    <li><strong class="blue">Mac OS/Linux:</strong> open Applications > Utilities > Terminal</li>
                     <li><strong class="blue">Win:</strong> in the Start menu or screen, search for Babun</li>
                 </ul>
 
@@ -185,13 +226,15 @@
     user@bash:
                 </code></pre>
             </section>
-        <!-- Check to make sure that Git is installed -->
+
+            <!-- Check to make sure that Git is installed -->
             <section class="hide-pdf">
                 <h2>Check that Git is installed</h2>
                 <p>&nbsp;</p>
                 <pre class="terminal"><code class="xml">git --version</code></pre>
             </section>
-        <!-- Configure Git for Commits -->
+
+            <!-- Configure Git for Commits -->
             <section class="hide-pdf">
                 <h2>Configure Git</h2>
                 <p>In order to record changes in your commit history, Git needs to know a little about you.</p>
@@ -201,7 +244,8 @@
                 <p>And the email attached to your GitHub account</p>
                 <pre class="terminal"><code class="xml">git config --global user.email "YOUR EMAIL"</code></pre>
             </section>
-        <!-- Creating a new repository -->
+
+            <!-- Creating a new repository -->
             <section class="hide-pdf">
                 <h2>Creating a new repository</h2>
                 <p>1. Create new folder</p>
@@ -211,31 +255,35 @@
                 <p>3. Initialize the folder as a Git repo</p>
                 <pre class="terminal"><code class="xml">git init</code></pre>
             </section>
-        <!-- What happened? -->
+
+            <!-- What happened? -->
             <section class="hide-pdf">
                 <h2>What happened?</h2>
                 <p>Let's check it out!</p>
-                <pre class="terminal"><code class="xml">ls -la</code></pre>
+                <pre class="terminal"><code class="xml">ls -al</code></pre>
                 <p>Hey, there's a new (hidden) folder</p>
                 <pre class="terminal"><code class="xml">.   ..  .git</code></pre>
                 <p>Let's see what's inside</p>
-                <pre class="terminal"><code class="xml">ls -la .git</code></pre>
+                <pre class="terminal"><code class="xml">ls -al .git</code></pre>
                 <p><small class="blue">We can also look at this Finder, but you'll only see .git if hidden files are set to visible</small></p>
             </section>
-        <!-- Making changes -->
+
+            <!-- Making changes -->
             <section class="hide-pdf">
                 <h2>Making changes</h2>
                 <p>Create a new file</p>
                 <pre class="terminal"><code class="xml">touch README.md</code></pre>
                 <p><small class="blue">Every repository should have a README file!</small></p>
             </section>
-        <!-- Git Status -->
+
+            <!-- Git Status -->
             <section class="hide-pdf">
                 <h2>Making changes</h2>
                 <p><pre class="inline">git status</pre> Check to see what changes Git has noticed</p>
                 <pre class="terminal"><code class="xml">git status</code></pre>
             </section>
-        <!-- Git Add -->
+
+            <!-- Git Add -->
             <section class="hide-pdf">
                 <h2>Making changes</h2>
                 <p><pre class="inline">git add</pre> Adds files to the Index (staging area for your next commit)</p>
@@ -245,7 +293,8 @@
                 <p>Add a single file</p>
                 <pre class="terminal"><code class="xml">git add README.md</code></pre>
             </section>
-        <!-- Git Add -->
+
+            <!-- Git Add -->
             <section class="hide-pdf">
                 <h2>Making changes</h2>
                 <p><pre class="inline">git add</pre>ed something you didn't intend to?</p>
@@ -257,7 +306,8 @@
                 <pre class="terminal"><code class="xml">git reset README.md</code></pre>
             </section>
 
-        <!-- Git Commit -->
+
+            <!-- Git Commit -->
             <section class="hide-pdf">
                 <h2>Making changes</h2>
                 <p><pre class="inline">git commit</pre> Commits your changes to the Head</p>
@@ -268,7 +318,8 @@
                 <p>&nbsp;</p>
                 <pre class="terminal"><code class="xml">git commit -m "added README file"</code></pre>
             </section>
-        <!-- Git Log -->
+
+            <!-- Git Log -->
             <section class="hide-pdf">
                 <h2>Making changes</h2>
                 <p><pre class="inline">git log</pre> Shows list of commits</p>
@@ -278,7 +329,8 @@ commit 579e546a022fe0e1297d80ebefa4c849c188b093
 Author: Elizabeth Krznarich <ekrznarich@Elizabeths-MacBook-Pro.local>
 Date:   Fri Feb 19 13:56:41 2016 -0500</code></pre>
             </section>
-        <!-- Practice! -->
+
+            <!-- Practice! -->
             <section class="hide-pdf">
                 <h2>Practice</h2>
 
@@ -289,7 +341,8 @@ Date:   Fri Feb 19 13:56:41 2016 -0500</code></pre>
                     <li>Check your commit history</li>
                 </ol>
             </section>
-        <!-- Reverting changes -->
+
+            <!-- Reverting changes -->
             <section class="hide-pdf">
                 <h2>Reverting changes</h2>
                 <p><pre class="inline">git reset [commit]</pre> undoes all commits after [commit] (but keeps all commits in log history)</p>
@@ -298,7 +351,8 @@ Date:   Fri Feb 19 13:56:41 2016 -0500</code></pre>
                 <p><pre class="inline">--hard</pre> option discards log history</p>
                 <pre class="terminal"><code class="xml">git reset --hard 579e546a022fe0e1297d80ebefa4c</code></pre>
             </section>
-        <!-- Practice! -->
+
+            <!-- Practice! -->
             <section class="hide-pdf">
                 <h2>Practice</h2>
 
@@ -307,7 +361,8 @@ Date:   Fri Feb 19 13:56:41 2016 -0500</code></pre>
                     <li>Revert back to that first commit</li>
                 </ol>
             </section>
-        <!-- Ignoring files -->
+
+            <!-- Ignoring files -->
             <section class="hide-pdf">
                 <h2>Ignoring files</h2>
                 <p>In every repo, there are likely some files that you don't want Git to track, including:</p>
@@ -319,7 +374,8 @@ Date:   Fri Feb 19 13:56:41 2016 -0500</code></pre>
                 <p>You can tell Git to ignore those by listing them in a <span class="blue">.gitignore</span> file</p>
                 <p><small>HINT! .gitignore templates for many languages are available at <a href="https://github.com/github/gitignore">https://github.com/github/gitignore</a></small></p>
             </section>
-        <!-- Ignoring files -->
+
+            <!-- Ignoring files -->
             <section class="hide-pdf">
                 <h2>Ignoring files</h2>
                 <p>Create a .gitignore file inside your repo</p>
@@ -327,7 +383,8 @@ Date:   Fri Feb 19 13:56:41 2016 -0500</code></pre>
                 <p>Add paths for files you want Git to ignore</p>
                 <pre class="terminal"><code class="xml">.DS_Store<br>*.log<br>~<br>~<br>--INSERT--</code></pre>
             </section>
-        <!-- Practice! -->
+
+            <!-- Practice! -->
             <section class="hide-pdf">
                 <h2>Practice</h2>
 
@@ -337,7 +394,8 @@ Date:   Fri Feb 19 13:56:41 2016 -0500</code></pre>
                 </ol>
             </section>
 
-         <!-- Remote Repositories -->
+
+            <!-- Remote Repositories -->
             <section class="hide-pdf">
                 <h2>Remote Repositories</h2>
                 <p>Why use a remote repository?</p>
@@ -347,29 +405,33 @@ Date:   Fri Feb 19 13:56:41 2016 -0500</code></pre>
                     <li>Share/collaborate with others</li>
                 </ul>
             </section>
-        <!-- Create a new GitHub repository -->
+
+            <!-- Create a new GitHub repository -->
             <section class="hide-pdf">
                 <h2>Create a new GitHub repository</h2>
                 <ol>
                     <li>Sign into GitHub <a href="https://github.com/login">https://github.com/login</a></li>
                     <li><img src="img/new-repo.png" width='200' style="float: right; margin: 0 0 0 .5em; padding: 0;">Click + in the upper right and choose New Repository
-                        </li>
+                    </li>
                     <li>Fill out the form and click Create Repository (see example on next slide)</li>
                 </ol>
             </section>
+
             <section class="hide-pdf">
                 <img src="img/create-repo.png" width='600'>
             </section>
 
 
 
-        <!-- Connect the your local repo to GitHub -->
+
+            <!-- Connect the your local repo to GitHub -->
             <section class="hide-pdf">
                 <h2>Connect your local repo to your GitHub repo</h2>
                 <p>Find the URL for your GitHub repo</p>
                 <img src="img/github-url.png">
             </section>
-         <!-- Connect the your local repo to GitHub -->
+
+            <!-- Connect the your local repo to GitHub -->
             <section class="hide-pdf">
                 <h2>Connect your local repo to your GitHub repo</h2>
                 <p>Set a new remote repo, using your GitHub URL</p>
@@ -378,14 +440,16 @@ Date:   Fri Feb 19 13:56:41 2016 -0500</code></pre>
                 <p>Verify that the remote repo was added</p>
                 <pre class="terminal"><code class="xml">git remote -v</code></pre>
             </section>
-        <!-- Push your commit to GitHub -->
+
+            <!-- Push your commit to GitHub -->
             <section class="hide-pdf">
                 <h2>Push code to GitHub</h2>
-                 <p><pre class="inline">git push [remote name] [branch name]</pre><br>push most recent commit to remote repo</p>
+                <p><pre class="inline">git push [remote name] [branch name]</pre><br>push most recent commit to remote repo</p>
                 <p>&nbsp;</p>
                 <pre class="terminal"><code class="xml">git push origin master</code></pre>
             </section>
-        <!-- Practice! -->
+
+            <!-- Practice! -->
             <section class="hide-pdf">
                 <h2>Practice</h2>
                 <ol>
@@ -394,7 +458,8 @@ Date:   Fri Feb 19 13:56:41 2016 -0500</code></pre>
                     <li>Push the change to GitHub</li>
                 </ol>
             </section>
-        <!-- Playing nicely with others -->
+
+            <!-- Playing nicely with others -->
             <section class="hide-pdf">
                 <h2>Playing nicely with others</h2>
                 <p>Git &amp; GitHub allow users to work collaboratively through 2 features:</p>
@@ -403,12 +468,14 @@ Date:   Fri Feb 19 13:56:41 2016 -0500</code></pre>
                     <li><span class="blue">Merging:</span> Incoporating branches into the master</li>
                 </ul>
             </section>
-        <!-- Playing nicely with others -->
+
+            <!-- Playing nicely with others -->
             <section class="hide-pdf">
                 <h2>Branching workflow</h2>
                 <img src="img/branch-flow.png">
             </section>
-        <!-- Clone an existing repository -->
+
+            <!-- Clone an existing repository -->
             <section class="hide-pdf">
                 <h2>Clone a repository</h2>
                 <p><pre class="inline">git clone [URL]</pre>
@@ -417,7 +484,8 @@ Date:   Fri Feb 19 13:56:41 2016 -0500</code></pre>
                 <p>&nbsp;</p>
                 <p><pre style="font-size: .8em;">https://github.com/gdiboston/gdi-intro-github-students</pre></p>
             </section>
-        <!-- Creating local branches -->
+
+            <!-- Creating local branches -->
             <section class="hide-pdf">
                 <h2>Creating local branches</h2>
                 <p>Check your current branch</p>
@@ -426,13 +494,15 @@ Date:   Fri Feb 19 13:56:41 2016 -0500</code></pre>
                 <p><pre class="inline">git checkout -b [branchname]</pre><br>Create a new local branch</p>
                 <pre class="terminal"><code class="xml">git checkout -b new-branch</code></pre>
             </section>
-        <!-- Creating remote branches -->
+
+            <!-- Creating remote branches -->
             <section class="hide-pdf">
                 <h2>Creating remote branches</h2>
                 <p><pre class="inline">git push [remote] [branchname]</pre><br>Create a remote copy of your new local branch and push changes to it</p>
                 <pre class="terminal"><code class="xml">git push origin new-branch</code></pre>
             </section>
-        <!-- Practice -->
+
+            <!-- Practice -->
             <section class="hide-pdf">
                 <h2>Practice</h2>
                 <ol>
@@ -443,7 +513,8 @@ Date:   Fri Feb 19 13:56:41 2016 -0500</code></pre>
                     <li>Push your branch to the remote repository</li>
                 </ol>
             </section>
-        <!-- Pull requests -->
+
+            <!-- Pull requests -->
             <section class="hide-pdf">
                 <h2>Pull requests</h2>
                 <p><span class="blue">Pull requests</span> send a message to the remote repository owner asking to merge your branch into the master branch</p>
@@ -452,7 +523,8 @@ Date:   Fri Feb 19 13:56:41 2016 -0500</code></pre>
                     <li>Pull requests can only be made via the GitHub UI</li>
                 </ul>
             </section>
-        <!-- Pull requests -->
+
+            <!-- Pull requests -->
             <section class="hide-pdf">
                 <h2>Create a pull request</h2>
                 <p>Switch to your branch</p>
@@ -460,21 +532,24 @@ Date:   Fri Feb 19 13:56:41 2016 -0500</code></pre>
                 <p>Click New Pull Request</p>
                 <img src="img/new-pull.png">
             </section>
-        <!-- Merging -->
+
+            <!-- Merging -->
             <section class="hide-pdf">
                 <h2>Merge a pull request</h2>
                 <p>If there are no conflicts, a pull request can be merged with one click</p>
                 <img src="img/merge-pull.png">
                 <p><small class="blue">Depending on the repo settings, you may be able to merge your own pull requests...this is not always a good idea</small></p>
             </section>
-        <!-- Syncing your local repo  -->
+
+            <!-- Syncing your local repo  -->
             <section class="hide-pdf">
                 <h2>Syncing local &amp; remote repos</h2>
                 <p>After pull requests are merged, it's important that you sync your local repo with the remote!</p>
                 <p><pre class="inline">git pull [remote]</pre><br>Fetch updates to the remote version of the current branch and merge them with your local copy</p>
                 <pre class="terminal"><code class="xml">git checkout master<br>git pull origin</code></pre>
             </section>
-        <!-- Practice -->
+
+            <!-- Practice -->
             <section class="hide-pdf">
                 <h2>Practice</h2>
                 <ol>
@@ -483,17 +558,19 @@ Date:   Fri Feb 19 13:56:41 2016 -0500</code></pre>
                     <li>Sync your local master with the remote master</li>
                 </ol>
             </section>
-        <!-- Merge conflicts -->
+
+            <!-- Merge conflicts -->
             <section class="hide-pdf">
                 <h2>Merge conflicts</h2>
                 <p><span class="blue">Merge conflicts</span> occur when changes in your branch conflict with changes made to the remote master.<br>&nbsp;
-                <p>This can happen when:</p>
-                <ul>
-                    <li>You're working on the same file as another user, and their changes get merged first</li>
-                    <li>You haven't synced your local master with the remote master in a while</li>
-                </ul>
+                    <p>This can happen when:</p>
+                    <ul>
+                        <li>You're working on the same file as another user, and their changes get merged first</li>
+                        <li>You haven't synced your local master with the remote master in a while</li>
+                    </ul>
             </section>
-        <!-- Resolve a merge conflict -->
+
+            <!-- Resolve a merge conflict -->
             <section class="hide-pdf">
                 <h2>Resolve a merge conflict</h2>
                 <p>1. Sync your local master with the remote master</p>
@@ -501,7 +578,8 @@ Date:   Fri Feb 19 13:56:41 2016 -0500</code></pre>
                 <p>2. (Attempt to) Merge your local master into your local branch (Git will tell you there's a conflict)</p>
                 <pre class="terminal"><code class="xml">git checkout problem-branch<br>git merge master</code></pre>
             </section>
-        <!-- Resolve a merge conflict -->
+
+            <!-- Resolve a merge conflict -->
             <section class="hide-pdf">
                 <h2>Resolve a merge conflict</h2>
                 <p>3. Edit the problem file(s) in your branch to remove the conflict(s)</p>
@@ -514,7 +592,8 @@ Date:   Fri Feb 19 13:56:41 2016 -0500</code></pre>
     &gt;&gt;&gt;&gt;&gt;&gt; master
                 </pre>
             </section>
-        <!-- Resolve a merge conflict -->
+
+            <!-- Resolve a merge conflict -->
             <section class="hide-pdf">
                 <h2>Resolve a merge conflict</h2>
                 <p>4. Commit your changes</p>
@@ -523,7 +602,8 @@ Date:   Fri Feb 19 13:56:41 2016 -0500</code></pre>
                 <pre class="terminal"><code class="xml">git push origin problem-branch</code></pre>
                 <p class="blue"><small>No need to open a new Pull Request - your pushed changes will automatically be reflected in the current Pull Request</small></p>
             </section>
-             <!-- Resources -->
+
+            <!-- Resources -->
             <section class="hide-pdf">
                 <h2>Resources</h2>
                 <p>More Git/GitHub goodness!</p>
@@ -533,7 +613,8 @@ Date:   Fri Feb 19 13:56:41 2016 -0500</code></pre>
                     <li><a href="https://git-scm.com/doc">Git Documentation</a></li>
                 </ul>
             </section>
-             <!-- Thanks! -->
+
+            <!-- Thanks! -->
             <section class="hide-pdf">
                 <p>&nbsp;</p>
                 <h2>Thanks!</h2>
@@ -544,43 +625,69 @@ Date:   Fri Feb 19 13:56:41 2016 -0500</code></pre>
 
 
 
-			</div>
-  		<footer>
-        <div class="copyright">
-          Intro to Version Control with Git/GitHub -- Boston Chapter --
-          <a rel="license" href="http://creativecommons.org/licenses/by-nc/3.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-nc/3.0/80x15.png" /></a>
+
         </div>
-      </footer>
-		</div>
+        <footer>
+            <div class="copyright">
+                Intro to Version Control with Git/GitHub -- Boston Chapter --
+                <a rel="license" href="http://creativecommons.org/licenses/by-nc/3.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-nc/3.0/80x15.png" /></a>
+            </div>
+        </footer>
+    </div>
 
 
-		<script src="lib/js/head.min.js"></script>
-		<script src="js/reveal.min.js"></script>
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.min.js"></script>
 
-		<script>
+    <script>
+        // Full list of configuration options available here:
+        // https://github.com/hakimel/reveal.js#configuration
+        Reveal.initialize({
+            controls: true,
+            progress: true,
+            history: true,
 
-			// Full list of configuration options available here:
-			// https://github.com/hakimel/reveal.js#configuration
-			Reveal.initialize({
-				controls: true,
-				progress: true,
-				history: true,
+            theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+            transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/none
 
-				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
-				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/none
+            // Optional libraries used to extend on reveal.js
+            dependencies: [{
+                src: 'lib/js/classList.js',
+                condition: function() {
+                    return !document.body.classList;
+                }
+            }, {
+                src: 'plugin/markdown/showdown.js',
+                condition: function() {
+                    return !!document.querySelector('[data-markdown]');
+                }
+            }, {
+                src: 'plugin/markdown/markdown.js',
+                condition: function() {
+                    return !!document.querySelector('[data-markdown]');
+                }
+            }, {
+                src: 'plugin/highlight/highlight.js',
+                async: true,
+                callback: function() {
+                    hljs.initHighlightingOnLoad();
+                }
+            }, {
+                src: 'plugin/zoom-js/zoom.js',
+                async: true,
+                condition: function() {
+                    return !!document.body.classList;
+                }
+            }, {
+                src: 'plugin/notes/notes.js',
+                async: true,
+                condition: function() {
+                    return !!document.body.classList;
+                }
+            }]
+        });
+    </script>
 
-				// Optional libraries used to extend on reveal.js
-				dependencies: [
-					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
-					{ src: 'plugin/markdown/showdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
-					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
-					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
-				]
-			});
+</body>
 
-		</script>
-
-	</body>
 </html>
