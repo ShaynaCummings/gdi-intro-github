@@ -1,15 +1,12 @@
-# gdi-intro-github
-Class materials for Intro to Version Control with Git/Github
+# GDI Intro to Git and Github: Spring 2017, Boston
 
-##To view the slides:
+## To download the slides as a Zip
 
-1. Download this repository to your computer https://github.com/gdiboston/gdi-intro-github/archive/master.zip
+1. Download a this repository to your computer by clicking the green 'Download and Clone' button above
 
 2. Unzip the gdi-intro-github-master.zip file that you downloaded
 
 3. Open the slides file at gdi-intro-github/slides/github-slides.html in a browser
 
-##Handout
+## Handout
 https://services.github.com/kit/downloads/github-git-cheat-sheet.pdf
-
-
