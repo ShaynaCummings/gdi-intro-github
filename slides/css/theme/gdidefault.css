@@ -44,10 +44,14 @@ body {
 
 .reveal {
     font-family: "Gotham-Book", "Helvetica", Arial, sans-serif;
-    font-size: 30px;
+    font-size: 32px;
     font-weight: 200;
     letter-spacing: -0.02em;
     color: #eeeeee;
+}
+
+.reveal small {
+    font-size: 0.8em;
 }
 
 ::selection {
@@ -113,8 +117,6 @@ body {
 
 .reveal section img {
     margin: 15px;
-    background: rgba(255, 255, 255, 0.12);
-    border: 4px solid #eeeeee;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
     -webkit-transition: all .2s linear;
     -moz-transition: all .2s linear;
