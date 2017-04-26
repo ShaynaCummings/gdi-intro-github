@@ -2,7 +2,7 @@
 
 ## To download the slides as a Zip
 
-1. Download a this repository to your computer by clicking the green 'Download and Clone' button above
+1. Download a this repository to your computer by clicking the green 'Clone or Download' button above and select 'Download'
 
 2. Unzip the gdi-intro-github-master.zip file that you downloaded
 
