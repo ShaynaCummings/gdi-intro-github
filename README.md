@@ -9,4 +9,4 @@
 3. Open the slides file at gdi-intro-github/slides/github-slides.html in a browser
 
 ## Handout
-https://services.github.com/kit/downloads/github-git-cheat-sheet.pdf
+[Git Cheat Sheet](https://services.github.com/on-demand/downloads/github-git-cheat-sheet.pdf)
