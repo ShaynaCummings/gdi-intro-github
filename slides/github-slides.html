@@ -128,13 +128,12 @@
             <section>
                 <h2>What is Version Control?</h2>
                 <p>Software that allows you (and your team) to do two powerful things:</p>
-                 <br/>
+                <br/>
 
                 <p><span class="blue">Collaborate</span>: Create anything with other people, from academic papers to entire websites and applications.</p>
                 <br/>
 
-                <p><span class="blue">Track and revert changes</span>: WWouldn't it be nice if you could go back to a "snapshot in time" to fix something that went wrong? Or see who specifically made
-                    the changes and when?</p>
+                <p><span class="blue">Track and revert changes</span>: Wouldn't it be nice if you could go back to a "snapshot in time" to fix something that went wrong? Or see who specifically made the changes and when?</p>
 
             </section>
 
@@ -247,7 +246,7 @@
             <section class="hide-pdf">
                 <h2>Configure Git</h2>
                 <p>In order to record changes in your commit history, Git needs to know a little about you.</p>
-                <p>Add your name</p>
+                <p>Add your Github Username</p>
                 <pre class="terminal"><code class="xml">git config --global user.name "YOUR NAME"</code></pre>
                 <p>&nbsp;</p>
                 <p>And the email attached to your GitHub account</p>
@@ -478,21 +477,7 @@ Date:   Fri Feb 19 13:56:41 2016 -0500</code></pre>
                 </ul>
             </section>
 
-            <!-- Playing nicely with others -->
-            <section class="hide-pdf">
-                <h2>Branching workflow</h2>
-                <img src="img/branch-flow.png">
-            </section>
 
-            <!-- Clone an existing repository -->
-            <section class="hide-pdf">
-                <h2>Clone a repository</h2>
-                <p><pre class="inline">git clone [URL]</pre>
-                    <br>Copy an existing repository to your computer</p>
-                <pre class="terminal"><code class="xml">git clone https://github.com/gdiboston/gdi-intro-github-students</code></pre>
-                <p>&nbsp;</p>
-                <p><pre style="font-size: .8em;">https://github.com/gdiboston/gdi-intro-github-students</pre></p>
-            </section>
 
             <!-- Creating local branches -->
             <section class="hide-pdf">
@@ -515,12 +500,38 @@ Date:   Fri Feb 19 13:56:41 2016 -0500</code></pre>
             <section class="hide-pdf">
                 <h2>Practice</h2>
                 <ol>
-                    <li>Clone the gdi-intro-github-students repo (if you haven't already)</li>
-                    <li>Create a new local branch named [first name][last initial] (ex: lizk)</li>
+                    <li>In your repo, create a new local branch named [first name][last initial] (ex: lizk)</li>
                     <li>Create a new text file inside the repo named [first name][last initial].txt (ex: lizk.txt)</li>
                     <li>Commit your change</li>
                     <li>Push your branch to the remote repository</li>
                 </ol>
+            </section>
+
+            <!-- Playing nicely with others -->
+            <section class="hide-pdf">
+                <h2>Branching workflow</h2>
+                <img src="img/branch-flow.png">
+            </section>
+
+            <!-- Clone an existing repository -->
+            <section class="hide-pdf">
+                <h2>Clone a repository</h2>
+                <br/>
+                <p><pre class="inline">git clone [URL]</pre>
+                    <br>Copy an existing repository to your computer</p>
+                <pre class="terminal"><code class="xml">git clone https://github.com/gdiboston/gdi-intro-github-students</code></pre>
+                <p>&nbsp;</p>
+                <p><pre style="font-size: .8em;">https://github.com/gdiboston/gdi-intro-github-students</pre></p>
+            </section>
+
+            <!-- Fork an existing repository -->
+            <section class="hide-pdf">
+                <h2>Or fork a repository to suggest changes</h2>
+                <p>Click the 'Fork' button to save a copy to your own Github, and then clone your own copy</p>
+                <br/>
+                <p><pre class="inline">git clone [URL]</pre>
+                    <pre class="terminal"><code class="xml">git clone https://github.com/YOURUSERNAME/gdi-intro-github-students</code></pre>
+                    <p>&nbsp;</p>
             </section>
 
             <!-- Pull requests -->
