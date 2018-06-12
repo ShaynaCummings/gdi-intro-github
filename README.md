@@ -1,8 +1,8 @@
-# GDI Intro to Git and Github: Spring 2017, Boston
+# GDI Boston: Intro to Git and Github:
 
 ## To download the slides:
 
-1. Download a this repository to your computer by clicking the green 'Clone or Download' button above
+1. Download a this repository to your computer by clicking the green 'Clone or download' button above
 
 2. To download as Zip file, select 'Download' and then unzip the gdi-intro-github-master.zip file once the download completes. Or, to clone this file, open your terminal and enter `git clone https://github.com/ShaynaCummings/gdi-intro-github.git`.
 
