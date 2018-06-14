@@ -1,4 +1,4 @@
-# GDI Boston: Intro to Git and Github:
+# GDI Boston: Intro to Git and Github
 
 ## To download the slides:
 
@@ -10,3 +10,5 @@
 
 ## Handout
 [Git Cheat Sheet](https://services.github.com/on-demand/downloads/github-git-cheat-sheet.pdf)
+
+### This deck was made with [RevealJS](https://revealjs.com/#/), which is super neat -- check it out!

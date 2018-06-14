@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
 
-    <title>GDI Boston Intro to Version Control with Git &amp; GitHub</title>
+    <title>GDI Boston: Intro to Version Control with Git &amp; GitHub</title>
 
     <meta name="description" content="Slides for Girl Develop It Boston's Intro to the Linux Command Line class">
     <meta name="author" content="Girl Develop It">
@@ -13,7 +13,7 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 
     <link rel="stylesheet" href="css/reveal.css">
-    <link rel="stylesheet" href="css/theme/gdidefault.css" id="theme">
+    <link rel="stylesheet" href="css/theme/gdilight.css" id="theme">
 
     <!-- For syntax highlighting -->
     <!-- light editor<link rel="stylesheet" href="lib/css/light.css">-->
@@ -40,18 +40,18 @@
                 <h3>Intro to Version Control with</h3>
                 <h1>Git &amp; GitHub</h1>
                 <p></p>
-                <p>Girl Develop It | Spring 2017</p>
+                <p>Girl Develop It | Summer 2018</p>
 
                 <p>
-                    <small>Find these slides (and other handy resources) at <a href ="https://github.com/ShaynaCummings/gdi-intro-github">https://github.com/ShaynaCummings/gdi-intro-github</a></small>
+                    <small>Find these slides at <a href ="https://github.com/ShaynaCummings/gdi-intro-github">https://github.com/ShaynaCummings/gdi-intro-github</a></small>
                 </p>
             </section>
 
             <!-- Welcome! -->
             <section class="hide-pdf">
                 <h2>Welcome!</h2>
-                <img src="./img/GDIBoston.png" width="200px" />
-                <p>Girl Develop It is here to provide affordable and accessible programs to learn software through mentorship and hands-on instruction.</p>
+                <img src="./img/gdi-boston.jpeg" width="200px" />
+                <p>Girl Develop It exists to provide affordable and judgment-free opportunities for women interested in learning web and software development.</p>
             </section>
 
             <!-- Ground Rules -->
@@ -72,16 +72,20 @@
 
                 <p class="blue">Thank you to our wonderful TAs!</p>
                 <ul>
-                    <p>Kathleen Csizmadia</p>
-                    <p>Lily Barrett</p>
+                    <li>Marissa</li>
+                    <li>Gail</li>
+                    <li>Natalia</li>
                 </ul>
                 <p>&nbsp;</p>
-                <p class="blue">Course website: </p>
-                <p>https://github.com/shaynacummings/gdi-intro-github</p>
-                <p>&nbsp;</p>
-                <p class="blue">Instructor contact info: </p>
+                <p class="blue">Instructor: </p>
                 <p>@ShaynaCummings</p>
-                <p>shayna.cummings@gmail.com</p>
+                <p>shayna.cummings@gmail.com</p>  
+            </section>
+            <section>
+                <h2>Course materials:</h2>
+                <p>
+                    <a href='http://github.com/shaynacummings/gdi-intro-github' target="_blank">github.com/shaynacummings/gdi-intro-github</a>
+                </p>
             </section>
 
             <!-- About You -->
@@ -95,7 +99,7 @@
             </section>
 
             <!-- Get started -->
-            <section class="hide-pdf">
+            <section>
                 <h2>Tools</h2>
                 <p>We'll be using the following tools in class today:</p>
                 <ul>
@@ -115,13 +119,17 @@
             <!-- What we'll cover today -->
             <section>
                 <h2>What we'll cover today</h2>
-                <ul>
+                <ol>
                     <li>Git concepts &amp; workflow</li>
                     <li>Setting up a new repository</li>
                     <li>Basic git commands (adding, committing &amp; pushing changes)</li>
                     <li>Collaborating w/others (branching &amp; merging)</li>
                     <li>Debugging and resolving merge conflicts</li>
-                </ul>
+                </ol>
+            </section>
+
+            <section>
+                <h2>1. Git concepts &amp; workflow</h2>
             </section>
 
             <!-- What is version control? -->
@@ -140,20 +148,19 @@
             <!-- What is version control? -->
             <section>
                 <h2>Y Tho?</h2>
-                <p>Ever worked on a group project and ended up with something ilke this?</p>
+                <p>Ever worked on a group project and ended up with something like this?</p>
                 <img src="img/finder-window.png">
 
             </section>
 
-
             <!-- Version Control Types -->
             <section>
                 <h3>Version Control Types</h3>
-                <p><span class="green">1990s</span> -- CVS (Concurrent Version Systems)</p>
-                <p><span class="green">2000s</span> -- SVN (Apache Subversion)</p>
-                <p><span class="green">2005</span> -- Git (well, Git)</p>
-                <br/>
-
+                <ul>
+                    <li><span class="green">1990s</span>: CVS (Concurrent Version Systems)</li>
+                    <li><span class="green">2000s</span>: SVN (Apache Subversion)</li>
+                    <li><span class="green">2005</span>: Git</li>
+                </ul>
 
                 <h4>Centralized Version Control</h4>
                 <p>Examples: CVS, SVN</p>
@@ -167,7 +174,7 @@
             </section>
 
             <!-- What is Git? -->
-            <section class="hide-pdf">
+            <section>
                 <h2>What is Git?</h2>
                 <p>&nbsp;</p>
                 <p><strong class="blue">Git:</strong> Free, open source version control system</p>
@@ -179,7 +186,7 @@
             </section>
 
             <!-- What is Git? -->
-            <section class="hide-pdf">
+            <section>
                 <h2>What is GitHub?</h2>
                 <p>&nbsp;</p>
                 <p><strong class="blue">GitHub:</strong> Code storage and sharing service that interacts with Git and allows you to:</p>
@@ -192,7 +199,7 @@
             </section>
 
             <!-- Git Terminology -->
-            <section class="hide-pdf">
+            <section>
                 <h2>Git Terminology</h2>
                 <ul>
                     <li><strong class="blue">Repository ("Repo"):</strong> a project (folder) that Git is tracking changes to</li>
@@ -204,14 +211,14 @@
             </section>
 
             <!-- Git Concepts -->
-            <section class="hide-pdf">
+            <section>
                 <h2>Git workflow</h2>
 
                 <img src="img/git-workflow.png" />
             </section>
 
             <!-- Git Concepts -->
-            <section class="hide-pdf">
+            <section>
                 <h2>Git workflow</h2>
                 <ol>
                     <li>Create a new folder for your project &amp; <pre class="inline">git init</pre> to make it a Git repo (or <pre class="inline">git clone</pre> an existing repo)</li>
@@ -222,8 +229,12 @@
                 </ol>
             </section>
 
+            <section>
+                <h2>2. Setting up a new repository</h2>
+            </section>
+
             <!-- Fire up your Terminal -->
-            <section class="hide-pdf">
+            <section>
                 <h2>Fire up your command shell</h2>
                 <ul>
                     <li><strong class="blue">Mac OS/Linux:</strong> open Applications > Utilities > Terminal</li>
@@ -236,14 +247,14 @@
             </section>
 
             <!-- Check to make sure that Git is installed -->
-            <section class="hide-pdf">
+            <section>
                 <h2>Check that Git is installed</h2>
                 <p>&nbsp;</p>
                 <pre class="terminal"><code class="xml">git --version</code></pre>
             </section>
 
             <!-- Configure Git for Commits -->
-            <section class="hide-pdf">
+            <section>
                 <h2>Configure Git</h2>
                 <p>In order to record changes in your commit history, Git needs to know a little about you.</p>
                 <p>Add your Github Username</p>
@@ -254,7 +265,7 @@
             </section>
 
             <!-- Creating a new repository -->
-            <section class="hide-pdf">
+            <section>
                 <h2>Creating a new repository</h2>
                 <p>1. Create new folder</p>
                 <pre class="terminal"><code class="xml">mkdir my-repo</code></pre>
@@ -265,7 +276,7 @@
             </section>
 
             <!-- What happened? -->
-            <section class="hide-pdf">
+            <section>
                 <h2>What happened?</h2>
                 <p>Let's check it out!</p>
                 <pre class="terminal"><code class="xml">ls -al</code></pre>
@@ -277,22 +288,26 @@
             </section>
 
             <!-- Making changes -->
-            <section class="hide-pdf">
+            <section>
                 <h2>Making changes</h2>
                 <p>Create a new file</p>
                 <pre class="terminal"><code class="xml">touch README.md</code></pre>
                 <p><small class="blue">Every repository should have a README file!</small></p>
             </section>
 
+            <section>
+                <h2>3. Basic git commands (adding, committing &amp; pushing changes</h2>
+            </section>
+            
             <!-- Git Status -->
-            <section class="hide-pdf">
+            <section>
                 <h2>Making changes</h2>
                 <p><pre class="inline">git status</pre> Check to see what changes Git has noticed</p>
                 <pre class="terminal"><code class="xml">git status</code></pre>
             </section>
 
             <!-- Git Add -->
-            <section class="hide-pdf">
+            <section>
                 <h2>Making changes</h2>
                 <p><pre class="inline">git add</pre> Adds files to the Index (staging area for your next commit)</p>
                 <p>&nbsp;</p>
@@ -303,7 +318,7 @@
             </section>
 
             <!-- Git Add -->
-            <section class="hide-pdf">
+            <section>
                 <h2>Making changes</h2>
                 <p><pre class="inline">git add</pre>ed something you didn't intend to?</p>
                 <p><pre class="inline">git reset</pre> Removes files from the Index</p>
@@ -316,7 +331,7 @@
 
 
             <!-- Git Commit -->
-            <section class="hide-pdf">
+            <section>
                 <h2>Making changes</h2>
                 <p><pre class="inline">git commit</pre> Commits your changes to the Head</p>
                 <ul>
@@ -328,7 +343,7 @@
             </section>
 
             <!-- Git Log -->
-            <section class="hide-pdf">
+            <section>
                 <h2>Making changes</h2>
                 <p><pre class="inline">git log</pre> Shows list of commits</p>
                 <p>&nbsp;</p>
@@ -339,7 +354,7 @@ Date:   Fri Feb 19 13:56:41 2016 -0500</code></pre>
             </section>
 
             <!-- Practice! -->
-            <section class="hide-pdf">
+            <section>
                 <h2>Practice</h2>
 
                 <ol>
@@ -351,7 +366,7 @@ Date:   Fri Feb 19 13:56:41 2016 -0500</code></pre>
             </section>
 
             <!-- Reverting changes -->
-            <section class="hide-pdf">
+            <section>
                 <h2>Reverting changes</h2>
                 <p><pre class="inline">git reset [commit]</pre> undoes all commits after [commit] (but keeps all commits in log history)</p>
                 <pre class="terminal"><code class="xml">git reset 579e546a022fe0e1297d80ebefa4c</code></pre>
@@ -361,7 +376,7 @@ Date:   Fri Feb 19 13:56:41 2016 -0500</code></pre>
             </section>
 
             <!-- Practice! -->
-            <section class="hide-pdf">
+            <section>
                 <h2>Practice</h2>
 
                 <ol>
@@ -371,7 +386,7 @@ Date:   Fri Feb 19 13:56:41 2016 -0500</code></pre>
             </section>
 
             <!-- Ignoring files -->
-            <section class="hide-pdf">
+            <section>
                 <h2>Ignoring files</h2>
                 <p>In every repo, there are likely some files that you don't want Git to track, including:</p>
                 <ul>
@@ -384,7 +399,7 @@ Date:   Fri Feb 19 13:56:41 2016 -0500</code></pre>
             </section>
 
             <!-- Ignoring files -->
-            <section class="hide-pdf">
+            <section>
                 <h2>Ignoring files</h2>
                 <p>Create a .gitignore file inside your repo</p>
                 <pre class="terminal"><code class="xml">cd my-repo<br>vim .gitignore</code></pre>
@@ -393,7 +408,7 @@ Date:   Fri Feb 19 13:56:41 2016 -0500</code></pre>
             </section>
 
             <!-- Practice! -->
-            <section class="hide-pdf">
+            <section>
                 <h2>Practice</h2>
 
                 <ol>
@@ -402,9 +417,12 @@ Date:   Fri Feb 19 13:56:41 2016 -0500</code></pre>
                 </ol>
             </section>
 
+            <section>
+                <h2>4. Collaborating w/others (branching &amp; merging)</h2>
+            </section>
 
             <!-- Remote Repositories -->
-            <section class="hide-pdf">
+            <section>
                 <h2>Remote Repositories</h2>
                 <p>Why use a remote repository?</p>
                 <ul>
@@ -415,7 +433,7 @@ Date:   Fri Feb 19 13:56:41 2016 -0500</code></pre>
             </section>
 
             <!-- Create a new GitHub repository -->
-            <section class="hide-pdf">
+            <section>
                 <h2>Create a new GitHub repository</h2>
                 <ol>
                     <li>Sign into GitHub <a href="https://github.com/login">https://github.com/login</a></li>
@@ -425,22 +443,20 @@ Date:   Fri Feb 19 13:56:41 2016 -0500</code></pre>
                 </ol>
             </section>
 
-            <section class="hide-pdf">
+            <section>
                 <img src="img/create-repo.png" width='600'>
             </section>
 
 
-
-
             <!-- Connect the your local repo to GitHub -->
-            <section class="hide-pdf">
+            <section>
                 <h2>Connect your local repo to your GitHub repo</h2>
                 <p>Find the URL for your GitHub repo</p>
                 <img src="img/github-url.png">
             </section>
 
             <!-- Connect the your local repo to GitHub -->
-            <section class="hide-pdf">
+            <section>
                 <h2>Connect your local repo to your GitHub repo</h2>
                 <p>Set a new remote repo, using your GitHub URL</p>
                 <pre class="terminal"><code class="xml">git remote add origin https://github.com...</code></pre>
@@ -450,7 +466,7 @@ Date:   Fri Feb 19 13:56:41 2016 -0500</code></pre>
             </section>
 
             <!-- Push your commit to GitHub -->
-            <section class="hide-pdf">
+            <section>
                 <h2>Push code to GitHub</h2>
                 <p><pre class="inline">git push [remote name] [branch name]</pre><br>push most recent commit to remote repo</p>
                 <p>&nbsp;</p>
@@ -458,7 +474,7 @@ Date:   Fri Feb 19 13:56:41 2016 -0500</code></pre>
             </section>
 
             <!-- Practice! -->
-            <section class="hide-pdf">
+            <section>
                 <h2>Practice</h2>
                 <ol>
                     <li>Add some text to your README.txt file and save</li>
@@ -468,7 +484,7 @@ Date:   Fri Feb 19 13:56:41 2016 -0500</code></pre>
             </section>
 
             <!-- Playing nicely with others -->
-            <section class="hide-pdf">
+            <section>
                 <h2>Playing nicely with others</h2>
                 <p>Git &amp; GitHub allow users to work collaboratively through 2 features:</p>
                 <ul>
@@ -480,7 +496,7 @@ Date:   Fri Feb 19 13:56:41 2016 -0500</code></pre>
 
 
             <!-- Creating local branches -->
-            <section class="hide-pdf">
+            <section>
                 <h2>Creating local branches</h2>
                 <p>Check your current branch</p>
                 <pre class="terminal"><code class="xml">git branch</code></pre>
@@ -490,14 +506,14 @@ Date:   Fri Feb 19 13:56:41 2016 -0500</code></pre>
             </section>
 
             <!-- Creating remote branches -->
-            <section class="hide-pdf">
+            <section>
                 <h2>Creating remote branches</h2>
                 <p><pre class="inline">git push [remote] [branchname]</pre><br>Create a remote copy of your new local branch and push changes to it</p>
                 <pre class="terminal"><code class="xml">git push origin new-branch</code></pre>
             </section>
 
             <!-- Practice -->
-            <section class="hide-pdf">
+            <section>
                 <h2>Practice</h2>
                 <ol>
                     <li>In your repo, create a new local branch named [first name][last initial] (ex: lizk)</li>
@@ -508,13 +524,13 @@ Date:   Fri Feb 19 13:56:41 2016 -0500</code></pre>
             </section>
 
             <!-- Playing nicely with others -->
-            <section class="hide-pdf">
+            <section>
                 <h2>Branching workflow</h2>
                 <img src="img/branch-flow.png">
             </section>
 
             <!-- Clone an existing repository -->
-            <section class="hide-pdf">
+            <section>
                 <h2>Clone a repository</h2>
                 <br/>
                 <p><pre class="inline">git clone [URL]</pre>
@@ -525,7 +541,7 @@ Date:   Fri Feb 19 13:56:41 2016 -0500</code></pre>
             </section>
 
             <!-- Fork an existing repository -->
-            <section class="hide-pdf">
+            <section>
                 <h2>Or fork a repository to suggest changes</h2>
                 <p>Click the 'Fork' button to save a copy to your own Github, and then clone your own copy</p>
                 <br/>
@@ -535,7 +551,7 @@ Date:   Fri Feb 19 13:56:41 2016 -0500</code></pre>
             </section>
 
             <!-- Pull requests -->
-            <section class="hide-pdf">
+            <section>
                 <h2>Pull requests</h2>
                 <p><span class="blue">Pull requests</span> send a message to the remote repository owner asking to merge your branch into the master branch</p>
                 <ul>
@@ -545,7 +561,7 @@ Date:   Fri Feb 19 13:56:41 2016 -0500</code></pre>
             </section>
 
             <!-- Pull requests -->
-            <section class="hide-pdf">
+            <section>
                 <h2>Create a pull request</h2>
                 <p>Switch to your branch</p>
                 <img src="img/switch-branch.png">
@@ -554,7 +570,7 @@ Date:   Fri Feb 19 13:56:41 2016 -0500</code></pre>
             </section>
 
             <!-- Merging -->
-            <section class="hide-pdf">
+            <section>
                 <h2>Merge a pull request</h2>
                 <p>If there are no conflicts, a pull request can be merged with one click</p>
                 <img src="img/merge-pull.png">
@@ -562,7 +578,7 @@ Date:   Fri Feb 19 13:56:41 2016 -0500</code></pre>
             </section>
 
             <!-- Syncing your local repo  -->
-            <section class="hide-pdf">
+            <section>
                 <h2>Syncing local &amp; remote repos</h2>
                 <p>After pull requests are merged, it's important that you sync your local repo with the remote!</p>
                 <p><pre class="inline">git pull [remote]</pre><br>Fetch updates to the remote version of the current branch and merge them with your local copy</p>
@@ -570,7 +586,7 @@ Date:   Fri Feb 19 13:56:41 2016 -0500</code></pre>
             </section>
 
             <!-- Practice -->
-            <section class="hide-pdf">
+            <section>
                 <h2>Practice</h2>
                 <ol>
                     <li>Make a pull request</li>
@@ -580,7 +596,7 @@ Date:   Fri Feb 19 13:56:41 2016 -0500</code></pre>
             </section>
 
             <!-- Merge conflicts -->
-            <section class="hide-pdf">
+            <section>
                 <h2>Merge conflicts</h2>
                 <p><span class="blue">Merge conflicts</span> occur when changes in your branch conflict with changes made to the remote master.<br>&nbsp;
                     <p>This can happen when:</p>
@@ -591,7 +607,7 @@ Date:   Fri Feb 19 13:56:41 2016 -0500</code></pre>
             </section>
 
             <!-- Resolve a merge conflict -->
-            <section class="hide-pdf">
+            <section>
                 <h2>Resolve a merge conflict</h2>
                 <p>1. Sync your local master with the remote master</p>
                 <pre class="terminal"><code class="xml">git checkout master<br>git pull</code></pre>
@@ -600,7 +616,7 @@ Date:   Fri Feb 19 13:56:41 2016 -0500</code></pre>
             </section>
 
             <!-- Resolve a merge conflict -->
-            <section class="hide-pdf">
+            <section>
                 <h2>Resolve a merge conflict</h2>
                 <p>3. Edit the problem file(s) in your branch to remove the conflict(s)</p>
                 <p>Git marks conflicts in your files:</p>
@@ -614,7 +630,7 @@ Date:   Fri Feb 19 13:56:41 2016 -0500</code></pre>
             </section>
 
             <!-- Resolve a merge conflict -->
-            <section class="hide-pdf">
+            <section>
                 <h2>Resolve a merge conflict</h2>
                 <p>4. Commit your changes</p>
                 <pre class="terminal"><code class="xml">git add [files]<br>git commit -m "resolve merge conflict"</code></pre>
@@ -624,7 +640,7 @@ Date:   Fri Feb 19 13:56:41 2016 -0500</code></pre>
             </section>
 
             <!-- Resources -->
-            <section class="hide-pdf">
+            <section>
                 <h2>Resources</h2>
                 <p>More Git/GitHub goodness!</p>
                 <ul>
@@ -635,7 +651,7 @@ Date:   Fri Feb 19 13:56:41 2016 -0500</code></pre>
             </section>
 
             <!-- Thanks! -->
-            <section class="hide-pdf">
+            <section>
                 <p>&nbsp;</p>
                 <h2>Thanks!</h2>
                 <p>&nbsp;</p>
@@ -649,7 +665,7 @@ Date:   Fri Feb 19 13:56:41 2016 -0500</code></pre>
         </div>
         <footer>
             <div class="copyright">
-                Intro to Version Control with Git/GitHub -- Boston Chapter --
+                Intro to Version Control with Git/GitHub - GDI Boston Chapter
                 <a rel="license" href="http://creativecommons.org/licenses/by-nc/3.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-nc/3.0/80x15.png" /></a>
             </div>
         </footer>
