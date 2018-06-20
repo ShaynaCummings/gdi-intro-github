@@ -37,10 +37,17 @@ body {
 
 .reveal {
   font-family: "Gotham-Book", "Helvetica", Arial, sans-serif;
-  font-size: 36px;
+  font-size: 32px;
   font-weight: 200;
-  letter-spacing: -0.02em;
   color: #333333; }
+
+.reveal pre.inline {
+  background-color: #ccc6c6;
+}
+
+.reveal small {
+  font-size: 0.7em;
+}
 
 ::selection {
   color: white;
@@ -59,8 +66,7 @@ body {
   margin: 0 0 20px 0;
   color: #f05b62;
   font-family: "Gotham-Bold", Impact, sans-serif;
-  line-height: 0.9em;
-  letter-spacing: 0.02em;
+  line-height: 1em;
   text-transform: none;
   text-shadow: #cccccc; }
 

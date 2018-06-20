@@ -1,12 +1,12 @@
 # GDI Boston: Intro to Git and Github
 
-## To download the slides:
+## To clone these slides:
 
-1. Download a this repository to your computer by clicking the green 'Clone or download' button above
+1.  Open your terminal and `cd` into the directory you normally store code. 
 
-2. To download as Zip file, select 'Download' and then unzip the gdi-intro-github-master.zip file once the download completes. Or, to clone this file, open your terminal and enter `git clone https://github.com/ShaynaCummings/gdi-intro-github.git`.
+1. Enter `git clone https://github.com:ShaynaCummings/shayna-testing.git` and hit enter
 
-3. Open the file `/gdi-intro-github/slides/github-slides.html` in a web browser
+1. Open the file `/gdi-intro-github/index.html` in a web browser
 
 ## Handout
 [Git Cheat Sheet](https://services.github.com/on-demand/downloads/github-git-cheat-sheet.pdf)
